@@ -1,0 +1,182 @@
+/* css/style.css */
+
+body { margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #121212; color: #fff; }
+
+.login-container { max-width: 300px; margin: 100px auto; padding: 20px; background: #1e1e1e; border-radius: 10px; text-align: center; }
+
+.login-container input { width: 100%; margin: 10px 0; padding: 10px; border: none; border-radius: 5px; }
+
+.login-container button { padding: 10px; width: 100%; background: #00aaff; border: none; color: #fff; font-weight: bold; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+
+.error { color: red; font-size: 14px; }
+
+.app { max-width: 800px; margin: 0 auto; padding: 20px; }
+
+header { display: flex; justify-content: space-between; align-items: center; }
+
+.genre-scroll { display: flex; overflow-x: auto; gap: 10px; padding: 10px 0; }
+
+.genre-scroll::-webkit-scrollbar { height: 5px; }
+
+.genre-scroll::-webkit-scrollbar-thumb { background: #00aaff; border-radius: 10px; }
+
+.genre-scroll button { background: #292929; color: white; border: none; padding: 10px; border-radius: 8px; cursor: pointer; white-space: nowrap; }
+
+.player { background: #1e1e1e; border-radius: 15px; padding: 20px; text-align: center; }
+
+.player img { width: 100%; max-width: 200px; border-radius: 15px; margin-bottom: 15px; }
+
+.controls button { font-size: 24px; background: none; border: none; color: white; margin: 0 10px; cursor: pointer; }
+
+.progress input { width: 100%; margin-top: 10px; }
+
+.extra-controls { margin-top: 10px; }
+
+.extra-controls button { font-size: 18px; background: none; border: none; color: white; margin: 0 10px; cursor: pointer; }
+
+#volume { width: 100px; }
+
+#playlist { list-style: none; padding: 0; margin-top: 20px; }
+
+#playlist li { padding: 10px; background: #292929; border-radius: 8px; margin-bottom: 5px; }
+
+#searchContainer input { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: none; }
+
+.progress input[type="range"] { width: 100%; accent-color: #00aaff; }
+.register-container {
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.register-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #292929;
+  color: white;
+}
+
+.register-container button {
+  padding: 10px;
+  width: 100%;
+  background: #00aaff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-toggle {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.register-toggle button {
+  background: none;
+  border: none;
+  color: #00aaff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-toggle button:hover {
+  text-decoration: underline;
+}
+
+.message {
+  color: #00ff88;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: #1e1e1e;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.close-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-content button,
+.menu-footer button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #292929;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-content button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+body {
+  overflow: auto !important;
+}
+
+#downloadBtn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #00aaff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.active-genre {
+  border: 2px solid #00aaff;
+  box-shadow: 0 0 10px #00aaff;
+}
