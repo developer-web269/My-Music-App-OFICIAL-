@@ -1,0 +1,20 @@
+{
+  "name": "My Music App",
+  "version": "1.0.0",
+  "description": "Una app de música simple y fácil de usar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "team_surubi",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.13.11",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "etag": "^1.8.1",
+    "express": "^5.1.0",
+    "node-cron": "^4.0.7"
+  }
+}

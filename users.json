@@ -1,0 +1,52 @@
+[
+  {
+    "username": "Admin",
+    "password": "teamsu",
+    "premium": true
+  },
+  {
+    "username": "usuario",
+    "password": "temsu",
+    "premium": false
+  },
+  {
+    "username": "Test01",
+    "password": "1234jh",
+    "premium": false
+  },
+  {
+    "username": "Candu.166",
+    "password": "candelamusic10/",
+    "premium": false
+  },
+  {
+    "username": "Lautaro",
+    "password": "Lautaro909",
+    "premium": false
+  },
+  {
+    "username": "Prueba",
+    "password": "xddd",
+    "premium": false
+  },
+  {
+    "username": "Elizabeth_1976c",
+    "password": "camicraft",
+    "premium": false
+  },
+  {
+    "username": "Elizabeth_1976",
+    "password": "123456",
+    "premium": false
+  },
+  {
+    "username": "Shamuel",
+    "password": "1234",
+    "premium": false
+  },
+  {
+    "username": "Kdda",
+    "password": "iudexxx012",
+    "premium": false
+  }
+]

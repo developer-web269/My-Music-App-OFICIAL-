@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Music App</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Login -->
+  <div class="login-container" id="loginContainer">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Usuario" />
+    <input type="password" id="password" placeholder="Contraseña" />
+    <label>
+      <input type="checkbox" id="acceptTerms" /> Acepto los <a href="#">Términos y Condiciones</a>
+    </label>
+    <button id="loginBtn">Login</button>
+    <p id="loginError" class="error"></p>
+  </div>
+
+  <!-- Registro -->
+  <div class="register-container" id="registerContainer" style="display: none;">
+    <h2>Crear Cuenta</h2>
+    <input type="text" id="newUsername" placeholder="Nuevo Usuario" />
+    <input type="password" id="newPassword" placeholder="Nueva Contraseña" />
+    <button id="registerBtn">Registrarme</button>
+    <p id="registerMessage" class="message"></p>
+    <button onclick="mostrarLogin()">Ya tengo cuenta</button>
+  </div>
+
+  <!-- Botón para mostrar registro -->
+  <div class="register-toggle" id="registerToggle">
+    <p>¿No tenés cuenta? <button onclick="mostrarRegistro()">Crear una</button></p>
+  </div>
+
+  <!-- App -->
+  <div class="app" id="app" style="display: none">
+    <!-- Menú hamburguesa -->
+    <button id="menuToggle" class="menu-btn">☰</button>
+
+    <!-- Menú lateral -->
+    <div id="sideMenu" class="side-menu" style="display: none;">
+      <div class="menu-header">
+        <span><strong>Usuario:</strong> <span id="menuUser"></span></span>
+        <button id="closeMenu" class="close-btn">⨉</button>
+      </div>
+      <div class="menu-content">
+        <button disabled>Función 1 (próximamente)</button>
+        <button disabled>Me gusta</button>
+      </div>
+    </div>
+
+    <!-- Cabecera -->
+    <header>
+      <h1>My Music App</h1>
+      <div id="searchContainer" style="display: none">
+        <input type="text" id="search" placeholder="Buscar canción..." />
+      </div>
+    </header>
+
+    <!-- Géneros -->
+    <div class="genre-scroll" id="genreScroll"></div>
+
+    <!-- Reproductor principal -->
+    <main class="main-content">
+      <div class="player">
+        <img id="cover" src="assets/default-cover.png" alt="Cover" />
+        <div class="info">
+          <h2 id="title">Título</h2>
+          <p id="artist">Artista</p>
+        </div>
+        <div class="controls">
+          <button id="prev">⏮️</button>
+          <button id="play">▶️</button>
+          <button id="next">⏭️</button>
+        </div>
+        <div class="progress">
+          <input type="range" id="progressBar" value="0" />
+        </div>
+        <div class="time-info">
+          <span id="currentTime">00:00</span>
+          <span style="float: right;" id="durationTime">00:00</span>
+        </div>
+        <audio id="audio"></audio>
+        <div class="extra-controls">
+          <button id="like">❤️</button>
+          <button id="dislike">💔</button>
+          <input type="range" id="volume" min="0" max="1" step="0.01" />
+          <button id="downloadBtn">⬇️ Descargar</button>
+        </div>
+      </div>
+
+      <aside class="playlist-panel">
+        <ul id="playlist"></ul>
+      </aside>
+    </main>
+  </div>
+
+  <script src="server.js"></script>
+</body>
+</html>
